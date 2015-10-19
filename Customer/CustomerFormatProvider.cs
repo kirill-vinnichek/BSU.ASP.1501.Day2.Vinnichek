@@ -19,9 +19,10 @@ namespace Task2
             if (customer == null)
                 return String.Empty;
 
-            if(format!="UN")
-                throw new FormatException(String.Format("The {0} format string is not supported.", format));
 
+            if (format != "UN")
+                return customer.ToString(format);
+            
             return customer.Name.ToUpperInvariant();        }
     }
 }

@@ -26,6 +26,7 @@ namespace Task2.Test
             Assert.AreEqual(String.Format("{0:N,p,R}", c), String.Format("{0} {1} {2}", c.Name, c.ContactPhone,c.Revenue));
             var pr = new CustomerFormatProvider();
             Assert.AreEqual(String.Format(pr, "{0:UN}", c), c.Name.ToUpperInvariant());
+            Assert.AreEqual(String.Format(pr, "{0:N}", c), c.Name.ToUpperInvariant());
 
 
 
