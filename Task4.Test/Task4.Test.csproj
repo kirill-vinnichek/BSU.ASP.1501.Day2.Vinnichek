@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C90F21BF-7EE7-49C7-9F78-CF542CCAC03A}</ProjectGuid>
+    <ProjectGuid>{BEDB615F-54D9-4AD7-82D5-64B488A12204}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task2.Test</RootNamespace>
-    <AssemblyName>Task2.Test</AssemblyName>
+    <RootNamespace>Task4.Test</RootNamespace>
+    <AssemblyName>Task4.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CustomFPTest.cs" />
+    <Compile Include="NODTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Customer\Task2.csproj">
-      <Project>{2386aa21-4ce0-4e00-8539-4aed08f19971}</Project>
-      <Name>Task2</Name>
+    <ProjectReference Include="..\Task4\Task4.csproj">
+      <Project>{4c7e2be7-cb38-4199-9b4b-973d68a6ca01}</Project>
+      <Name>Task4</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
