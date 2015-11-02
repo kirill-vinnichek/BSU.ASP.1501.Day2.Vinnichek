@@ -28,10 +28,13 @@ namespace Task4.Test
         {
             Assert.AreEqual(NOD.Euclidean(null), 0);
         }
+
+        [TestMethod]
         public void SteinTest()
         {
             long ticks = 0;
             Assert.AreEqual(NOD.Stein(125, 100), 25);
+            Assert.AreEqual(NOD.Stein(125, 1), 1);
             Assert.AreEqual(NOD.Stein(out ticks, 1256, 648, 1232, 12312), 8);
             Debug.WriteLine("Stein - {0}", ticks);
         }
